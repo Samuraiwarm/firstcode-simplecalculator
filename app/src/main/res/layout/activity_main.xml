@@ -10,10 +10,9 @@
         android:id="@+id/text_first_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="First Number"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp" />
 
     <EditText
         android:id="@+id/edittext_first_number"
@@ -22,31 +21,31 @@
         android:ems="10"
         android:hint="First Number Here"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/text_first_number"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp" />
 
     <TextView
         android:id="@+id/text_second_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Second Number"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_first_number"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp" />
 
     <Button
         android:id="@+id/button_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate!"
-        app:layout_constraintTop_toBottomOf="@+id/radio_group_operations"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="272dp" />
 
     <RadioGroup
         android:id="@+id/radio_group_operations"
         android:layout_width="291dp"
         android:layout_height="135dp"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_second_number"
-        tools:layout_editor_absoluteX="16dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="137dp">
 
         <RadioButton
             android:id="@+id/radio_add"
@@ -83,7 +82,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/text_second_number"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="91dp" />
 
 </android.support.constraint.ConstraintLayout>
