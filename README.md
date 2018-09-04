@@ -21,7 +21,7 @@ Spoilers: You might not need to use Java in the 2nd year for advanced comp prog 
 
 Primitive Data types: `Byte, Short, Int, Long, Double, Float, Boolean, Char, String`
 
-Operations: Same as most languages. `+ - * / %`, `> < >= <= == !=`, `&& ||`, `++ --`
+Operations: Same as most languages. `+ - * / % **`, `> < >= <= == !=`, `&& ||`, `++ --`
 
 `val yourVariable: ObjectType = yourValue`
 
@@ -37,7 +37,7 @@ examples!
 
 val gender: String = "male"
 var yourAge: Int = 18
-var girlFriendName: String? = null //sad reacts?
+var girlfriendName: String? = null //sad reacts?
 val myFavoritePhoneNumber = 191
 
 ```
@@ -65,10 +65,67 @@ String yourIntro = "My name is "+name+" and I am "+age+" years old!"; //oh my do
 Kotlin-1:Java-0 \(^o^)/
 ```
 
+Logging
+
+We can't use System.out.print() or print() in Kotlin, but we have a log function to display your log for debugging purpose. You can see the log message in **logcat** in Android Studio.
+
+```
+Log.i(tag,message) //info
+Log.e(tag,message) //error
+Log.w(tag,message) //warning
+Log.wtf(tag,message) //i have no idea lol
+
+All of them will log for you, but in different color. You can add the tag for each logs to keep track of the log.
+
+example!
+Log.i("Test","Hello Doggie") will log as
+"something bla bla bla com.example.yourapp I/Test: Hello Doggie" in default terminal text color(?).
+
+Log.e("ERROR?","ERROR!!!") will log as
+"something bla bla bla com.example.yourapp E/ERROR?: ERROR!!!" in red text.
+
+```
+
+Functions
+
+```
+fun yourFunction(parameter: ParameterType): ReturnType{
+   //do your function
+   return returnTypeObject
+}
+
+Your function does not need to return anything (return void)
+fun yourAnotherFunction(){
+  //do the stuff
+}
+
+examples!
+fun squareNumber(x: Double): Double{
+  return x**2
+}
+
+more examples!
+fun sayHi(){
+  Log.i("","Goodbye World")
+}
+```
+
+Functions and Property access of variables
 
 `Object.function() or Object.property`
 
 `Object!!.function() or Object!!.property` -> non-null asserted. Even if the Object is null, ignore it. Some functions/property will bug if your object is actually null.
+
+We won't get to details on creating functions that can be called after the object yet.
+
+```
+examples!
+
+val dog: Dog
+dog.bark() //Woof!
+print(dog.age)
+
+```
 
 if-else statement
 
