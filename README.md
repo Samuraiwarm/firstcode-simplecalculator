@@ -208,7 +208,7 @@ Button.setOnClickListnener{
 
 `Toast.makeText(context,text,duration).show()` display a pop-up message on your app
 ```
-context: too complex on this scope, just put `this`
-text: any String
+context: tl;dr? put 'this'. Context represents an object that stores the state of the activity.
+text: message
 duration: either Toast.LENGTH_LONG or Toast.LENGTH_SHORT
 ```
