@@ -201,6 +201,7 @@ Button.setOnClickListnener{
 `EditText.text.toString()` returns text from editText as String
 
 `String.toInt() / String.toDouble() / String.toFloat() / etc.` cast from String to data types
+
 `String.toIntOrNull() / String.toDoubleOrNull() / String.toFloatOrNull() / etc.` cast from String to data types if possible, else returns null
 
 `RadioGroup.checkedRadioButtonId` returns the id of checked radio button in the radioGroup
