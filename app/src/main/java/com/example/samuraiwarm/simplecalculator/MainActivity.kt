@@ -47,7 +47,8 @@ class MainActivity : AppCompatActivity() {
                     //Toast is a small pop-up message on Android screen
                     //requires 3 parameters, context, text, and duration of text.
                     //context is pretty abstract, but it basically represents
-                    //the environment of your app. "this" refers to this Activity
+                    //the object containing environment data of your activity.
+                    //"this" refers to this Activity
                     else -> Toast.makeText(this,
                             "Select the operation first!",
                             Toast.LENGTH_SHORT).show()
