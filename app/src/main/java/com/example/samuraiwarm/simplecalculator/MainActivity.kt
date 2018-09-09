@@ -10,23 +10,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //pseudo-code below
-
-//        if(button is clicked){
+//
+//        assign what to do if the button is clicked{
 //
 //            firstInput = get text from first editText
 //            secondInput = get text from second editText
 //
-//            result = ???
+//            checkedButtonId = get the id of checked radioButton from the radioGroup
 //
 //            if(both firstInput and secondInput are Double){
-//                when(what radio button from radio group){
+//                when(checked button id){
 //                    add button -> add
 //                    subtract button -> subtract
-//                    multiply button -> multiply
-//                    divide button -> divide
+//                    ...
 //                    else -> ???
 //                }
-//                print result
+//
 //            } else {
 //                either firstInput or secondInput are not Double. print error!
 //            }
