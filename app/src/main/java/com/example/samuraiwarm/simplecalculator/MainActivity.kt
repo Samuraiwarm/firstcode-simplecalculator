@@ -2,7 +2,6 @@ package com.example.samuraiwarm.simplecalculator
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -44,22 +43,11 @@ class MainActivity : AppCompatActivity() {
                     radio_multiply.id -> result = firstNumber * secondNumber
                     radio_divide.id -> result = firstNumber / secondNumber
 
-                    //Toast is a small pop-up message on Android screen
-                    //requires 3 parameters, context, text, and duration of text.
-                    //context is pretty abstract, but it basically represents
-                    //the object containing environment data of your activity.
-                    //"this" refers to this Activity
-                    else -> Toast.makeText(this,
-                            "Select the operation first!",
-                            Toast.LENGTH_SHORT).show()
+                    else -> text_answer.text = "Select the operation first!"
                 }
-                Toast.makeText(this,
-                        "The answer is ${result.toString()}",
-                        Toast.LENGTH_SHORT).show()
+                text_answer.text = "The answer is ${result.toString()}"
             } else {
-                Toast.makeText(this,
-                        "Invalid input!",
-                        Toast.LENGTH_SHORT).show()
+                text_answer.text = "Invalid input!"
             }
         }
     }
